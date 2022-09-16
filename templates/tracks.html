@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Tracks
+{% endblock %}
+
+{% block main %}
+<table class="table table-striped" id="table">
+    <thead>
+        <tr>
+            <th class="text-start">{{chosen_playlist}}: {{totals}} songs</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for row in songs %}
+            <tr>
+                <td class="text-start">{{ row }}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
