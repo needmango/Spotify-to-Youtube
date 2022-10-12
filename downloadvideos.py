@@ -44,8 +44,8 @@ class MyLogger(object):
         if "100.0%" in complete:
             showSong()
 
-    def warning(self, msg):
-        pass
+    # def warning(self, msg):
+    #     pass
 
     def error(self, msg):
         print(msg)
